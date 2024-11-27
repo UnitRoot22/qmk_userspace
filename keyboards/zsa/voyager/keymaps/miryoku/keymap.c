@@ -4,7 +4,7 @@
 // This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 #include "features/achordion.h"
-#include "print.h"
+
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (!process_achordion(keycode, record)) { return false; }
@@ -53,7 +53,9 @@ enum layers {
     MEDIA = 6,   // Media layer
     NUM = 7,     // Number layer
     SYM = 8,     // Symbol layer
-    FUN = 9      // Function layer
+    FUN = 9,     // Function layer
+    GAME = 10,   // Game layer
+    GAMENUM = 11 // GameNum layer
 };
 
 #define BASE_COLOR        0XFF, 0X00, 0X00
@@ -63,6 +65,8 @@ enum layers {
 #define NUM_COLOR         0x00, 0x00, 0X7F
 #define SYM_COLOR         0x00, 0X7F, 0x7F
 #define FUN_COLOR         0x40, 0x00, 0x40
+#define GAME_COLOR        0xFF, 0x80, 0x00
+#define GAMENUM_COLOR     0x40, 0x00, 0x40
 
 
 void keyboard_post_init_user(void) {
@@ -94,6 +98,12 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         break;
     case FUN:
         rgb_matrix_set_color_all(FUN_COLOR);
+        break;
+    case GAME:
+        rgb_matrix_set_color_all(GAME_COLOR);
+        break;
+    case GAMENUM:
+        rgb_matrix_set_color_all(GAMENUM_COLOR);
         break;
     }
     return false;
