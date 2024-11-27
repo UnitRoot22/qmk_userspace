@@ -100,18 +100,18 @@ K36, K37, K38, K39, K40, K41,      K42, K43, K44, K45, K46, K47, \
 
 
 #define MIRYOKU_LAYER_LIST \
-MIRYOKU_X(BASE,   "Base") \
-MIRYOKU_X(EXTRA,  "Extra") \
-MIRYOKU_X(TAP,    "Tap") \
-MIRYOKU_X(BUTTON, "Button") \
-MIRYOKU_X(NAV,    "Nav") \
-MIRYOKU_X(MOUSE,  "Mouse") \
-MIRYOKU_X(MEDIA,  "Media") \
-MIRYOKU_X(NUM,    "Num") \
-MIRYOKU_X(SYM,    "Sym") \
-MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(GAME,   "Game") \
-MIRYOKU_X(GAMENUM,   "GameNum") \
+MIRYOKU_X(BASE,    "Base") \
+MIRYOKU_X(EXTRA,   "Extra") \
+MIRYOKU_X(TAP,     "Tap") \
+MIRYOKU_X(BUTTON,  "Button") \
+MIRYOKU_X(NAV,     "Nav") \
+MIRYOKU_X(MOUSE,   "Mouse") \
+MIRYOKU_X(MEDIA,   "Media") \
+MIRYOKU_X(NUM,     "Num") \
+MIRYOKU_X(SYM,     "Sym") \
+MIRYOKU_X(FUN,     "Fun") \
+MIRYOKU_X(GAME,    "Game") \
+MIRYOKU_X(GAMENUM, "GameNum") \
 
 #undef TAPPING_TERM
 #define TAPPING_TERM 220
