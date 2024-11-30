@@ -44,11 +44,11 @@ MO(U_GAMENUM),  U_NP,    U_NP,    KC_LCTL, KC_LGUI, U_NP,        U_NP,    U_NP, 
                                            KC_SPC,  KC_TAB,      KC_ENT,  KC_BSPC 
 
 #define MIRYOKU_LAYER_GAMENUM \
-U_NP,           KC_7,    KC_8,    KC_9,    U_NP,    U_NP,        U_NP,    U_NP,    U_NP,     U_NP,    U_NP,    U_NP, \
-U_NP,           KC_4,    KC_5,    KC_6,    U_NP,    U_NP,        KC_LEFT, KC_DOWN, KC_UP,    KC_RGHT, U_NP,    U_NP, \
-U_NP,           KC_1,    KC_2,    KC_3,    U_NP,    U_NP,        U_NP,    U_NP,    U_NP,     U_NP,    U_NP,    U_NP, \
-U_NP,           U_NP,    U_NP,    U_NP,    U_NP,    U_NP,        U_NP,    U_NP,    U_NP,     U_NP,    U_NP,    U_NP, \
-                                           KC_0,    U_NP,        U_NP,    U_NP
+U_NP,           U_NP,    KC_7,    KC_8,    KC_9,   U_NP,        U_NP,    U_NP,    U_NP,     U_NP,    U_NP,    U_NP, \
+U_NP,           U_NP,    KC_4,    KC_5,    KC_6,   U_NP,        KC_LEFT, KC_DOWN, KC_UP,    KC_RGHT, U_NP,    U_NP, \
+U_NP,           U_NP,    KC_1,    KC_2,    KC_3,   U_NP,        U_NP,    U_NP,    U_NP,     U_NP,    U_NP,    U_NP, \
+U_NP,           U_NP,    U_NP,    U_NP,    U_NP,   U_NP,        U_NP,    U_NP,    U_NP,     U_NP,    U_NP,    U_NP, \
+                                           KC_0,   U_NP,        U_NP,    U_NP
 
 
 // Custom base layer with Game layer switch
